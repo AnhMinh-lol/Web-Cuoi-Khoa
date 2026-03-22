@@ -710,7 +710,7 @@ elif menu == "Ứng dụng theo dõi sức khoẻ nâng cao":
     else:
         st.warning("Hãy phân tích sức khoẻ để hệ thống tính TDEE trước khi lập kế hoạch")
 elif menu == "Game":
-    tabA,tabB,tabC,tabD,tabF,tabG, tabH, tabJ = st.tabs(["Game tung xúc sắc", "Game đoán số", "Kéo - Búa - Bao", "Game tính toán nhanh", "Game đuổi hình bắt chữ", "Game trắc nghiệm", "Game quay số may mắn", ])
+    tabA,tabB,tabC,tabD,tabF,tabG, tabH = st.tabs(["Game tung xúc sắc", "Game đoán số", "Kéo - Búa - Bao", "Game tính toán nhanh", "Game đuổi hình bắt chữ", "Game trắc nghiệm", "Game quay số may mắn"])
     with st.sidebar:
         st.video("https://dn720301.ca.archive.org/0/items/rpreplay-final-1680875953/RPReplay_Final1680875953.mp4",autoplay=True, muted=True)
     with tabA:
