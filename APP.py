@@ -1063,33 +1063,6 @@ elif menu == "Game":
                         st.session_state.quiz_done = True
                     st.rerun()
     with tabH:
-        st.title("🧧 Game quay số may mắn")
-        # Khởi tạo danh sách phần thưởng
-        if "prizes" not in st.session_state:
-            st.session_state.prizes = []
-
-        # Nhập phần thưởng
-        new_prize = st.text_input("Nhập phần thưởng")
-        if st.button("➕ Thêm phần thưởng"):
-            if new_prize:
-                st.session_state.prizes.append(new_prize)
-                
-        # Hiển thị danh sách
-        st.write("🎁 Danh sách phần thưởng:", st.session_state.prizes)
-        
-        # Quay số
-        if st.button("🎡 Quay số"):
-            if st.session_state.prizes:
-                result = random.choice(st.session_state.prizes)
-                st.success(f"🎉 Bạn trúng: {result}")
-                # Xóa phần thưởng đã trúng
-                #st.session_state.prizes.remove(result)
-            else:
-                st.warning("⚠️ Chưa có phần thưởng!")
-        # Reset
-        if st.button("🔄 Reset"):
-            st.session_state.prizes = []
-    with  TabJ:
         st.title("Game quay so may man")
         if "prizes" not in st.session_state:
             st.session_state.new_prizes = []
